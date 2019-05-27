@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Minstagram</title>
 
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -16,8 +16,8 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between">
-      <a class="navbar-brand" href="#">Minstagram</a>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-between mx-md-5">
+      <a class="title navbar-brand" style="color: #666666;" href="#">Minstagram</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,9 +25,9 @@
 
       <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
         <a class="dummy"><a>
-        <form class="form-inline mr-md-5  ">
+        <form class="search-form form-inline mr-md-5 flex-nowrap">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 " type="submit">Search</button>
         </form>
 
         <div class="navbar-nav ml-md-2">
@@ -35,12 +35,11 @@
           <a class="nav-item nav-link" href="#"><i class="far fa-heart"></i></a>
           <a class="nav-item nav-link" href="#"><i class="far fa-user"></i></a>
         </div>
-
-
       </div>
     </nav>
 
   
+    <!-- post bar -->
     <div class="post-bar ">
         <form class="form-inline justify-content-center">
             <input class="form-control mr-sm-2 m-2" type="search" placeholder="Search" aria-label="Search">
@@ -48,9 +47,84 @@
         </form>
     </div>
     
+  <div class="contents row d-flex align-items-start justify-content-center">
 
+    <!-- cards -->
+    <div class="cards mx-3 ">
+      <!-- dummy1 -->
+      <div class="posts row justify-content-center">
+          <div class="card m-1 mx-4" style="max-width: 600px;">
+              <img  src="image/img1.jpg" alt="Card image cap"  class="card-img-top">
+              <div class="card-body">
+                <img class="rounded-circle float-left mr-3 border" style="width: 40px;" src="./image/avatar1.jpg" alt="avatar">
+                <h5 class=" mb-0 d-inline">Alice</h5>
+                <p class=" d-block font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione consectetur porro officia accusantium illum facere beatae numquam maxime dignissimos, id ut quas nisi magnam corrupti minima rerum atque hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat soluta reiciendis accusamus adipisci officiis quaerat? Laboriosam, corrupti veritatis tempora eligendi fugit ad amet. Ex, quasi! Nam omnis non sunt et! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore temporibus numquam sapiente eos suscipit fugit enim quae dolorem dicta laborum nihil magni dignissimos in delectus quas error tempora, qui neque.</p>
 
+                <a class="float-right" ><i class="far fa-heart" style="font-size: 1.2em;"></i></a>
+              </div>
+          </div>
+      </div>
 
+        <!-- dummy2 -->
+        <div class="posts row justify-content-center">
+            <div class="card m-1 mx-4" style="max-width: 600px;">
+                <img  src="image/img2.jpg" alt="Card image cap"  class="card-img-top ">
+                <div class="card-body">
+                  <img class="rounded-circle float-left mr-3 border" style="width: 40px;" src="./image/avatar2.jpg" alt="avatar">
+                  <h5 class=" mb-0 d-inline">Bob</h5>
+                  <p class=" d-block font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      
+                  <a class="float-right" ><i class="far fa-heart" style="font-size: 1.2em;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- dummy3 -->
+        <div class="posts row justify-content-center">
+            <div class="card m-1 mx-4" style="max-width: 600px;">
+                <img  src="image/img3.jpg" alt="Card image cap"  class="card-img-top ">
+                <div class="card-body">
+                  <img class="rounded-circle float-left mr-3 border" style="width: 40px;" src="./image/avatar1.jpg" alt="avatar">
+                  <h5 class=" mb-0 d-inline">Alice</h5>
+                  <p class=" d-block font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      
+                  <a class="float-right" ><i class="far fa-heart" style="font-size: 1.2em;"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- dummy4 -->
+        <div class="posts row justify-content-center">
+            <div class="card m-1 mx-4" style="max-width: 600px;">
+                <img  src="image/img4.jpg" alt="Card image cap"  class="card-img-top ">
+                <div class="card-body">
+                  <img class="rounded-circle float-left mr-3 border" style="width: 40px;" src="./image/avatar2.jpg" alt="avatar">
+                  <h5 class=" mb-0 d-inline">Bob</h5>
+                  <p class=" d-block font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      
+                  <a class="float-right" ><i class="far fa-heart" style="font-size: 1.2em;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- suggestion -->
+    <aside style="margin-left: 10%;">
+      <ul class="list-group" >
+        <li class="list-group-item py-3">Suggestions</li>
+
+        <li class="list-group-item d-flex align-items-center " ><img class="rounded-circle float-left mr-3 border" style="width: 40px; height: 40px;" src="./image/avatar1.jpg" alt="avatar">
+          <h5 class="m-0" style="font-size: 80%;">Alice</h5>
+        </li>
+        <li class="list-group-item d-flex align-items-center " s><img class="rounded-circle float-left mr-3 border" style="width: 40px; height: 40px;" src="./image/avatar2.jpg" alt="avatar">
+          <h5 class="m-0" style="font-size: 80%;" >Bob</h5>
+        </li>
+        </li>
+      </ul>
+      
+      <h6 class="mt-2" style="font-size: 50%;">&copy;2019 MINSTAGRAM</h6>
+    </aside>
+  </div>  
 
   <!-- jQuery -->
   <script
